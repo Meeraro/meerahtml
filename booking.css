@@ -1,0 +1,29 @@
+body{
+    background-color: #420543;
+    content: normal;
+    color: white;
+    justify-items: center;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:59vh;
+}
+img{
+    border-radius: 20px;
+    border: 6px ridge rgb(255, 255, 255);
+    margin: 6px;
+}
+.card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.container:hover> :not(:hover){
+    opacity: 0.3;
+}
+.card:hover{
+    transform: scale(1.1);
+    filter: grayscale(0.3);
+}
